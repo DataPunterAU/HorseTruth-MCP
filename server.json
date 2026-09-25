@@ -1,0 +1,26 @@
+﻿{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "au.com.horsetruth/machine-intelligence",
+  "title": "Horse Truth Machine Intelligence",
+  "description": "Paid derived Australian racehorse intelligence for AI agents, MCP clients, software and publishers.",
+  "repository": {
+    "url": "https://github.com/DataPunterAU/HorseTruth-MCP",
+    "source": "github"
+  },
+  "websiteUrl": "https://horsetruth.com.au/developers",
+  "version": "1.0.1",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://horsetruth.com.au/api/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Horse Truth machine API key using Bearer <key>. Free discovery tools work without a key; purchase paid access at https://horsetruth.com.au/developers",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
